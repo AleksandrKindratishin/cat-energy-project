@@ -45,6 +45,14 @@
         a {
             @include textBtnStyle;
             color: $text-color-btn;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-delay: 0s;
+            transition-timing-function: cubic-bezier(0.75, -1, 0.21, -1);
+
+                &:hover {
+                    border-bottom: 4px solid #FFFFFF;
+                }
         }
 }
 
@@ -58,9 +66,10 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 50% 100%;
+    margin-bottom: 82px;    
 
         .banner__content {
-            margin-left: 73px;
+            margin: 0 auto;
             width: 823px;
             padding-top: 150px;
             display: flex;
@@ -86,7 +95,116 @@
                     @include textBtnStyle;
                     color: $text-color-btn;
                     padding: 14px 26px;
-                    background-color: #68B738;;
+                    background-color: #68B738;
+                    transition: all 0.3s;
+
+                        &:hover {
+                            background: #FDC305;
+                        }
                 }
         }
 }
+
+
+/*===========================MASS===================================*/
+
+.mass {
+    margin-bottom: 70px;
+}
+
+.mass__conteiner {
+    display: flex;
+    justify-content: space-between;
+
+
+    .weight-loss, .weight-gain {
+        width: 570px;
+        background-color: $bg-color;
+        position: relative;
+
+            a {
+                @include textBtnStyle;
+                width: 168px;
+                color: $main-text-color;
+                background-image: url(../img/mass/arrow.svg);
+                background-position-x: right;
+                background-position-y: center;
+                background-repeat: no-repeat;
+                display: inline-block;
+                transition: all 0.2s;
+                margin-left: 52px;
+                margin-bottom: 60px;
+
+                    &:hover {
+                        width: 190px;
+                    }
+            }
+    }
+
+
+        .weight-loss__title {
+            @include secondaryTitleStyles;
+            margin-bottom: 73px;
+            display: inline-block;
+            margin-top: 77px;
+            margin-left: 214px;
+
+            &::before {
+                content: "";
+                background-image: url(../img/mass/cat.svg);
+                background-repeat: no-repeat;
+                background-size: 60px;
+                background-position: center;
+                position: absolute;
+                top: 47px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: #68B738;
+                display: inline-block;
+                left: 40px;
+            }
+        }
+
+        .weight-loss__subtitle {
+            @include descriptionTextStyles;
+            color: #000000;
+            margin-bottom: 27px;
+            padding-left: 52px;
+        }
+
+
+
+        .weight-gain__title {
+            @include secondaryTitleStyles;
+            margin-bottom: 73px;
+            display: inline-block;
+            margin-top: 77px;
+            margin-left: 214px;
+            
+
+            &::before {
+                content: "";
+                background-image: url(../img/mass/tigre.svg);
+                background-repeat: no-repeat;
+                background-size: 90px;
+                background-position: center;
+                position: absolute;
+                top: 47px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: #68B738;
+                display: inline-block;
+                left: 40px;
+            }
+        }
+
+        .weight-gain__subtitle {
+            @include descriptionTextStyles;
+            color: #000000;
+            margin-bottom: 27px;
+            padding-left: 52px;
+        }
+}
+
