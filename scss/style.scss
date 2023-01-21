@@ -4,3 +4,89 @@
 
 /*===================================================*/
 
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+        .main {
+        flex: 1 1 auto;
+    }
+}
+
+
+/*==============================================================*/
+.__conteiner {
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+/*===========================HEADER===================================*/
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    z-index: 50;
+        .header__conteiner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 480px;
+        }
+
+        a {
+            @include textBtnStyle;
+            color: $text-color-btn;
+        }
+}
+
+
+
+/*===========================BANNER===================================*/
+
+.banner {
+    height: 696px;
+    background-image: url(../img/banner/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 50% 100%;
+
+        .banner__content {
+            margin-left: 73px;
+            width: 823px;
+            padding-top: 150px;
+            display: flex;
+            justify-content: space-between;
+
+                .text {
+                    margin-top: 82px;
+                }
+
+                .text__title {
+                    @include mainTitleStyles;
+                    width: 414px;
+                    margin-bottom: 40px;
+                }
+
+                .text__subtitle {
+                    @include textBtnStyle;
+                    color: $main-text-color;
+                    margin-bottom: 52px;
+                }
+
+                a {
+                    @include textBtnStyle;
+                    color: $text-color-btn;
+                    padding: 14px 26px;
+                    background-color: #68B738;;
+                }
+        }
+}

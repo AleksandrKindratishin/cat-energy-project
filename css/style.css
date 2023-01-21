@@ -72,3 +72,116 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*===================================================*/
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+.wrapper .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/*==============================================================*/
+.__conteiner {
+  max-width: 1240px;
+  margin: 0px auto;
+}
+
+/*===========================HEADER===================================*/
+.header {
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  z-index: 50;
+}
+.header .header__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 480px;
+}
+.header a {
+  font-family: Oswald;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  line-height: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+/*===========================BANNER===================================*/
+.banner {
+  height: 696px;
+  background-image: url(../img/banner/banner-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 50% 100%;
+}
+.banner .banner__content {
+  margin-left: 73px;
+  width: 823px;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.banner .banner__content .text {
+  margin-top: 82px;
+}
+.banner .banner__content .text__title {
+  font-family: Oswald;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000000;
+  font-size: 60px;
+  width: 414px;
+  margin-bottom: 40px;
+}
+.banner .banner__content .text__subtitle {
+  font-family: Oswald;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  line-height: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 52px;
+}
+.banner .banner__content a {
+  font-family: Oswald;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  line-height: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 14px 26px;
+  background-color: #68B738;
+}
