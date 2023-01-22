@@ -319,3 +319,64 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 27px;
   padding-left: 52px;
 }
+
+/*===========================FUNCTIONAL===================================*/
+.functional {
+  margin-bottom: 70px;
+}
+
+.functional__conteiner .fuunctional__title {
+  font-family: Oswald;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000000;
+  font-size: 60px;
+  margin-bottom: 72px;
+}
+.functional__conteiner .functional__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.functional__conteiner .card {
+  width: 246px;
+  height: 280px;
+}
+.functional__conteiner .one {
+  background-image: url(../img/functional/bg_1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.functional__conteiner .two {
+  background-image: url(../img/functional/bg_2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.functional__conteiner .three {
+  background-image: url(../img/functional/bg_3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.functional__conteiner .for {
+  background-image: url(../img/functional/bg_4.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.functional__conteiner img {
+  margin-bottom: 31px;
+}
+.functional__conteiner p {
+  width: 227px;
+  font-family: "Arial";
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+}

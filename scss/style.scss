@@ -208,3 +208,64 @@
         }
 }
 
+
+/*===========================FUNCTIONAL===================================*/
+
+.functional {
+    margin-bottom: 70px;
+}
+
+.functional__conteiner {
+
+        .fuunctional__title {
+            @include mainTitleStyles;
+            margin-bottom: 72px;
+        }
+
+        .functional__cards {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 246px;
+            height: 280px;
+        }
+
+        .one {
+            background-image: url(../img/functional/bg_1.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        .two {
+            background-image: url(../img/functional/bg_2.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        .three {
+            background-image: url(../img/functional/bg_3.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        .for {
+            background-image: url(../img/functional/bg_4.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        img {
+            margin-bottom: 31px;
+        }
+
+        p {
+            width: 227px;
+            @include descriptionTextStyles;
+        }
+}
