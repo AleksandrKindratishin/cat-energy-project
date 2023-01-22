@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 /*===========================BANNER===================================*/
 .banner {
   height: 696px;
-  background-image: url(../img/banner/banner-bg.png);
+  background-image: url("../img/banner/banner-bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: 50% 100%;
