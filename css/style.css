@@ -96,7 +96,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px auto;
 }
 
-/*===========================HEADER===================================*/
+@media (max-width: 1240px) {
+  .__conteiner {
+    max-width: 709px;
+  }
+}
+/*===========================HEADER(DESCTOP)===================================*/
 .header {
   position: absolute;
   width: 100%;
@@ -143,7 +148,18 @@ h1, h2, h3, h4, h5, h6 {
 .header a:hover {
   border-bottom: 4px solid #FFFFFF;
 }
+@media (max-width: 1240px) {
+  .header a:hover {
+    border-bottom: 4px solid #68B738;
+  }
+}
+@media (max-width: 1240px) {
+  .header a {
+    color: #000000;
+  }
+}
 
+/*===========================HEADER(TABLET)===================================*/
 /*===========================BANNER===================================*/
 .banner {
   height: 696px;
@@ -164,6 +180,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 1240px) {
+  .banner .banner__content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 .banner .banner__content .text {
   margin-top: 82px;
@@ -204,6 +226,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #FDC305;
 }
 
+@media (max-width: 1240px) {
+  .banner {
+    background-image: none;
+  }
+}
 /*===========================MASS===================================*/
 .mass {
   margin-bottom: 70px;
@@ -217,10 +244,24 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1240px) {
+  .mass__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .mass__conteiner .weight-loss, .mass__conteiner .weight-gain {
   width: 570px;
   background-color: #F2F2F2;
   position: relative;
+}
+@media (max-width: 1240px) {
+  .mass__conteiner .weight-loss, .mass__conteiner .weight-gain {
+    width: 708px;
+    margin-bottom: 30px;
+  }
 }
 .mass__conteiner .weight-loss a, .mass__conteiner .weight-gain a {
   font-family: Oswald;
@@ -342,9 +383,23 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1240px) {
+  .functional__conteiner .functional__cards {
+    -webkit-box-flex: 33.33%;
+        -ms-flex: 33.33%;
+            flex: 33.33%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .functional__conteiner .card {
   width: 246px;
   height: 280px;
+}
+@media (max-width: 1240px) {
+  .functional__conteiner .card {
+    margin: 30px;
+  }
 }
 .functional__conteiner .one {
   background-image: url(../img/functional/bg_1.png);

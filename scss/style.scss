@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+
 /*===================================================*/
 
 .wrapper {
@@ -23,7 +24,15 @@
     margin: 0px auto;
 }
 
-/*===========================HEADER===================================*/
+@media (max-width: 1240px) {
+
+        .__conteiner {
+            max-width: 709px;
+        }   
+        
+}
+
+/*===========================HEADER(DESCTOP)===================================*/
 
 .header {
     position: absolute;
@@ -53,8 +62,25 @@
                 &:hover {
                     border-bottom: 4px solid #FFFFFF;
                 }
+
+                @media (max-width: 1240px) {
+                    &:hover {
+                        border-bottom: 4px solid #68B738;
+                    }
+                }
+        }
+
+        @media (max-width: 1240px) {
+            a {
+                color: $main-text-color
+            }
         }
 }
+
+
+/*===========================HEADER(TABLET)===================================*/
+
+
 
 
 
@@ -75,6 +101,10 @@
             padding-top: 150px;
             display: flex;
             justify-content: space-between;
+
+            @media (max-width: 1240px) {
+                justify-content: space-around;
+            }
 
                 .text {
                     margin-top: 82px;
@@ -106,6 +136,12 @@
         }
 }
 
+@media (max-width: 1240px) {
+    .banner {
+        background-image: none;
+    }
+}
+
 
 /*===========================MASS===================================*/
 
@@ -117,11 +153,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1240px) {
+        flex-direction: column;
+    }
+
 
     .weight-loss, .weight-gain {
         width: 570px;
         background-color: $bg-color;
         position: relative;
+
+        @media (max-width: 1240px) {
+            width: 708px;
+            margin-bottom: 30px;
+        }
 
             a {
                 @include textBtnStyle;
@@ -228,9 +273,23 @@
             justify-content: space-between;
         }
 
+        @media (max-width: 1240px) {
+            .functional__cards {
+                flex: 33.33%;
+                flex-wrap: wrap;
+                
+            }
+        }
+
         .card {
             width: 246px;
             height: 280px;
+        }
+
+        @media (max-width: 1240px) {
+            .card {
+                margin: 30px;
+            }
         }
 
         .one {
