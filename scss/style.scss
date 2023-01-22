@@ -269,3 +269,51 @@
             @include descriptionTextStyles;
         }
 }
+
+
+/*===========================EXAMPLE===================================*/
+
+.example {
+    background-color: $bg-color;
+    padding: 75px 0;
+}
+
+
+.example__block {
+    margin: 0 auto;
+    width: 436px;
+
+        h2 {
+            @include mainTitleStyles;
+            margin-bottom: 70px;
+        }
+
+        .example__subtitle {
+            @include descriptionTextStyles;
+            margin-bottom: 70px;
+        }
+
+        .example__description {
+            display: flex;
+            justify-content: space-between;
+            width: 366px;
+
+                p {
+                    border: 1px solid #CDCDCD;
+                    border-radius: 3px;
+                    padding: 15px 57px;
+                    @include textBtnStyle;
+                    margin-bottom: 60px;
+                }
+        }
+
+        .example__about {
+            display: flex;
+            justify-content: space-between;
+            width: calc(174px + 90px + 63px);
+                p {
+                    @include textBtnStyle;
+                }
+        }
+
+}

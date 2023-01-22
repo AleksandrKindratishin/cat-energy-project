@@ -380,3 +380,68 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   color: #444444;
 }
+
+/*===========================EXAMPLE===================================*/
+.example {
+  background-color: #F2F2F2;
+  padding: 75px 0;
+}
+
+.example__block {
+  margin: 0 auto;
+  width: 436px;
+}
+.example__block h2 {
+  font-family: Oswald;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000000;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+.example__block .example__subtitle {
+  font-family: "Arial";
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 70px;
+}
+.example__block .example__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 366px;
+}
+.example__block .example__description p {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  padding: 15px 57px;
+  font-family: Oswald;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  line-height: 20px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+.example__block .example__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 327px;
+}
+.example__block .example__about p {
+  font-family: Oswald;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  line-height: 20px;
+  line-height: 30px;
+}
