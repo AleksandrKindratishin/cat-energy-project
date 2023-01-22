@@ -28,8 +28,18 @@
 
         .__conteiner {
             max-width: 709px;
+            margin: 0px auto;
         }   
         
+}
+
+@media (max-width: 709px) {
+
+    .__conteiner {
+        max-width: 500px;
+        margin: 0px auto;
+    }
+    
 }
 
 /*===========================HEADER(DESCTOP)===================================*/
@@ -42,14 +52,26 @@
         .header__conteiner {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center;        
+
+            @media (max-width: 709px) {
+                img {
+                    display: none;
+                }
+            }
         }
 
         ul {
             display: flex;
             justify-content: space-between;
             width: 480px;
+
+            @media (max-width: 709px) {
+                
+            }
         }
+
+
 
         a {
             @include textBtnStyle;
@@ -68,6 +90,10 @@
                         border-bottom: 4px solid #68B738;
                     }
                 }
+
+                @media (max-width: 709px) {
+                    font-size: $description-font-size;
+                }
         }
 
         @media (max-width: 1240px) {
@@ -77,6 +103,11 @@
         }
 }
 
+@media (max-width: 709px) {
+    .header {
+        height: 150px;
+    }
+}
 
 /*===========================HEADER(TABLET)===================================*/
 
@@ -139,6 +170,19 @@
 @media (max-width: 1240px) {
     .banner {
         background-image: none;
+    }
+}
+
+@media (max-width: 709px) {
+    .banner {
+        height: 696px;
+        background-image: url(../img/banner/banner-bg.png);
+        z-index: 100;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 100% 100%;
+        margin-bottom: 82px; 
+        margin-top: 160px;
     }
 }
 
