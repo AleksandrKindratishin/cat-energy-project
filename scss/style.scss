@@ -324,5 +324,24 @@
 }
 
 
-/*===========================GOOGLE-MAP===================================*/
+/*===========================FOOTER===================================*/
+
+
+.footer {
+    height: 150px;
+
+
+        .footer__conteiner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 64px;
+
+                .footer__icons {
+                    width: calc(28px + 81px + 13px);
+                    display: flex;
+                    justify-content: space-between;
+                }
+        }
+}
 
