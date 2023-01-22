@@ -445,3 +445,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   line-height: 30px;
 }
+
+.line {
+  border-bottom: 1px solid #CDCDCD;
+}
+
+/*===========================GOOGLE-MAP===================================*/
